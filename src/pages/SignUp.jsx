@@ -29,6 +29,7 @@ function Signup(){
         e.preventDefault();
         await axios.post("https://todobackend-nvja.onrender.com/users",form);
         navigate('/login')
+        console.log("submit")
    }
     return(
         <div className="signup-page">
